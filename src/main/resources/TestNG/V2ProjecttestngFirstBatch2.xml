@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="V2Project-Module">
+
+ <parameter name="browserName" value="chrome"/>
+<parameter name="environment" value="Test"/>
+<parameter name="moduleName" value="V2"/>
+<parameter name="videoRecording" value="true"/>
+
+<test name="WELL-V2Pilot-CoreProject-Single Assert-Opt-Rating" >
+<parameter name="SheetName" value="V2Project"/>
+<parameter name="rowNum" value="10"/>
+<parameter name="Type" value="WELLCertification"/>
+<parameter name="Country" value="US"/>
+<parameter name="Discount" value="SectorDiscount"/>
+<parameter name="is_Leed" value="false"/>
+<parameter name="ProjectType" value="v2-pilot"/>
+<parameter name="API" value="true"/>
+<parameter name="Upload" value="false"/>
+<parameter name="Commodity" value="SingleAsset"/>
+<parameter name="ImportLocation" value="No"/>
+<parameter name="ProjectName" value="AutomationV2PilotProjectHsrOptAddMultiplePart"/>
+<!-- WELL-Certification V2Pilot-CoreProject-Optn Rating Multiple upload and Recertification -->
+<classes>
+<class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_02_RegisterV2ProjectTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_03_SearchV2ProjectByIdTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_04_EnrollV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_21_PricingV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_05_BillingV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_06_AgreementV2ProjectTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_34_ReplaceDocumentInOptnRatingtV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_02_HealthSafetyV2ProjectOptn_AddMultiplePartTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_06A_ValidateV2PilotLEEDFunctionalityTest"></class>
+ <class name="com.Well.testcases.V2Project.V2_TC_23C_V2PilotNonCoreProjectRecertificationTest"></class>   
+<class name="com.Well.testcases.V2Project.V2_TC_Batch1_ErrorNegativeAssertTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_Batch1_FieldNegativeAssertTest"></class>
+</classes>
+</test>  
+</suite> 

@@ -1,0 +1,40 @@
+<suite name="Portfolio-FirstBatch-Module">
+
+	
+<parameter name="browserName" value="chrome"/>
+<parameter name="environment" value="Test"/>
+<parameter name="moduleName" value="Common"/>   
+<parameter name="videoRecording" value="true"/>
+
+<test name="WELL-At-Scale-SubscribeLocation">
+		<parameter name="SheetName" value="Portfolio" />
+		<parameter name="rowNum" value="9" />
+		<parameter name="Country" value="US"/>
+		<parameter name="ProjectType" value="v2"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="false"/>
+		<parameter name="API" value="true"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="Common"/>
+		<parameter name="ProjectName" value="AutomationV2UploadSubscribeLocationToPortfolioOptn"/>
+		
+		<classes>
+	   <class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_03_SearchPortfolioByIdTest"></class>
+	   <class name="com.Well.testcases.Portfolio.Portfolio_TC_04_SignAndSubscribePortfolioTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05_PortfolioPaymentTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05A_PortfolioValidateBillingReceiptTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_06_PortfolioLocationImportTest"></class> 
+	  <class name="com.Well.testcases.Portfolio.Portfolio_TC_Optn_02_SubscribeLocationToPortfolioHsrOptnTest"></class>  
+	<class name="com.Well.testcases.Portfolio.Portfolio_TC_Optn_03_SubscribeLocationToPortfolioWprOptnTest"></class> 
+	<class name="com.Well.testcases.Portfolio.Portfolio_TC_Optn_04_SubscribeLocationToPortfolioWerOptnTest"></class>    
+	<class name="com.Well.testcases.Portfolio.Portfolio_TC_Optn_05_SubscribeLocationReplaceTest"></class> 
+	  <class name="com.Well.testcases.Portfolio.Portfolio_TC_Optn_06_SubscribeLocationReplaceOptnTest"></class> 
+	<class name="com.Well.testcases.Portfolio.Portfolio_TC_Optn_07_SubscribeLocationReviewTest"></class> 
+	<class name="com.Well.testcases.Portfolio.Portfolio_TC_Optn_08_SubscribeLocationPostReviewTest"></class>
+	  	<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch1_ErrorNegativeAssertTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch1_FieldNegativeAssertTest"></class>  
+	</classes> 
+	</test>
+</suite>  

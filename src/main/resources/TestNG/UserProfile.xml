@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WELL-ProfileUser-module">
+
+<parameter name="browserName" value="chrome"/>
+<parameter name="environment" value="Test"/>
+<parameter name="moduleName" value="Common"/>
+
+ <test name="WELL-ProfileUser" >
+<parameter name="SheetName" value="Membership"/>
+<parameter name="rowNum" value="4"/>
+<parameter name="MembershipName" value="Keystone"/>
+<classes>
+<class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+<!-- <class name="com.Well.testcases.UserProfile.UserProfile_TC_01_UserProfileTest"></class>
+<class name="com.Well.testcases.UserProfile.UserProfile_TC_02_ForgotYourPasswordTest"></class>
+<class name="com.Well.testcases.UserProfile.UserProfile_TC_03_ErrorNegativeAssertTest"></class>
+<class name="com.Well.testcases.UserProfile.UserProfile_TC_04_FieldNegativeAssertTest"></class> -->
+</classes>
+</test>
+</suite>  

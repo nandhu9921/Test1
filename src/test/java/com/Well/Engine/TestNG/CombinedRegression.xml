@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WELL Frontend Regression">
+<listeners>
+<listener class-name="com.Well.Engine.TestNGEmailableReport2" />
+</listeners>
+<parameter name="SecurtiyTest" value="false"/>
+<parameter name="videoRecording" value="true"/>
+<suite-files>
+<!-- <suite-file path="Facultytestng.xml"></suite-file> 
+<suite-file path="Examtestng.xml"></suite-file>
+<suite-file path="CornerstoneMembershiptestng.xml"></suite-file> 
+<suite-file path="KeystoneMembershiptestng.xml"></suite-file> 
+<suite-file path="WPRtestng.xml"></suite-file>
+<suite-file path="Communitytestng.xml"></suite-file>  
+<suite-file path="HSRtestng.xml"></suite-file>
+<suite-file path="WERtestng.xml"></suite-file> 
+<suite-file path="PortfolioSecondBatch.xml"></suite-file> -->
+ <!-- <suite-file path="PortfolioFirstBatch2.xml"></suite-file>   -->
+<!-- <suite-file path="UserProfile.xml"></suite-file>  -->
+<!--  <suite-file path="V2ProjecttestngFirstBatch.xml"></suite-file>  --> 
+ <!-- <suite-file path="V2ProjecttestngFirstBatch2.xml"></suite-file>  -->
+<!-- <suite-file path="V2ProjecttestngSecondBatch.xml"></suite-file>  -->
+ <!-- <suite-file path="PortfolioSecondBatch2.xml"></suite-file>   -->
+<!-- <suite-file path="PortfolioSecondBatch.xml"></suite-file> --> 
+<!-- <suite-file path="WERtestng.xml"></suite-file>  -->
+<!-- <suite-file path="CornerstoneMembershiptestng2.xml"></suite-file>  -->
+<!-- <suite-file path="PortfolioFirstBatch2.xml"></suite-file> -->
+<!-- <suite-file path="WERtestng.xml"></suite-file>  -->
+
+ 
+<!-- <suite-file path="PortfolioFirstBatch.xml"></suite-file> -->
+ <!-- <suite-file path="PortfolioSecondBatch.xml"></suite-file> --> 
+ <!-- <suite-file path="CornerstoneMembershiptestng.xml"></suite-file>  -->
+<!-- <suite-file path="WPRtestng2.xml"></suite-file> -->
+<!--  <suite-file path="V2ProjecttestngFirstBatch2.xml"></suite-file> -->  
+<!--  <suite-file path="PortfolioFirstBatch2.xml"></suite-file>  -->
+<!-- <suite-file path="WPRtestng2.xml"></suite-file>  -->
+<suite-file path="Examtestng.xml"></suite-file>
+<suite-file path="Facultytestng.xml"></suite-file>
+</suite-files>
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browserName" value="chrome"/>
+<parameter name="environment" value="Test"/>
+<parameter name="moduleName" value="V2"/>
+<parameter name="videoRecording" value="true"/>
+<test name="WELL-V2-CoreProject-Single Assert-Optn-Rating">
+    <parameter name="SheetName" value="V2Project"/>
+    <parameter name="rowNum" value="20"/>
+    <parameter name="Country" value="US"/>
+    <parameter name="ProjectName" value="ProjectName"/>
+    <classes>
+       <class name="com.Well.testcases.login.TC_01_LoginTest"/>
+       <class name="com.Well.testcases.login.AssignmentTask02"/> 
+       <class name="com.Well.testcases.login.TC_01_EnrollV2Project"/>
+    </classes>
+</test>
+</suite> 

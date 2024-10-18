@@ -1,0 +1,127 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Portfolio-SecondBatch-Module">
+
+<parameter name="moduleName" value="Common"/>   
+
+  <test name="WELL-At-Scale-Custom">
+		<parameter name="SheetName" value="Portfolio" />
+		<parameter name="rowNum" value="4" />
+		<parameter name="Country" value="US"/>
+		<parameter name="ProjectType" value="v2"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="false"/>
+		<parameter name="API" value="true"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="CustomV2"/>
+		<parameter name="ProjectName" value="AutomationV2CustomPortfolio"/>
+		<!--WELL-At-Scale-Scorecard validate Options, Assign location and Task -->
+		<!--WELL-At-Scale-Document library validate Uploaded document -->
+		<classes>
+		<class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+	 	<class name="com.Well.testcases.Portfolio.Portfolio_TC_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_03_SearchPortfolioByIdTest"></class>
+	   <class name="com.Well.testcases.Portfolio.Portfolio_TC_04_SignAndSubscribePortfolioTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05_PortfolioPaymentTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05A_PortfolioValidateBillingReceiptTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_06_PortfolioLocationImportTest"></class>
+	   <class name="com.Well.testcases.Portfolio.Portfolio_CTC_01_FeatureTest"></class>
+	   <class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_ErrorNegativeAssertTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_FieldNegativeAssertTest"></class> 
+		</classes> 
+	</test>	
+	
+	<test name="WELL-At-Scale-V2-CustomUpload">
+		<parameter name="SheetName" value="Custom_Portfolio" />
+		<parameter name="rowNum" value="3" />
+		<parameter name="Country" value="US"/>
+		<parameter name="API" value="true"/>
+		<parameter name="ProjectType" value="v2"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="true"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="CustomUploadV2"/>
+		<parameter name="ProjectName" value="AutomationV2CustomUploadPortfolio"/>
+	
+		<!--WELL-At-Scale-V2-Upload document all type document Before Review and Post Review
+		WELL-At-Scale-V2-Upload document all type in Subscribe location Viceversa validation with Portfolio-->
+		<classes>
+		  <class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+		 <class name="com.Well.testcases.Portfolio.Portfolio_TC_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_03_SearchPortfolioByIdTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_04_SignAndSubscribePortfolioTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05_PortfolioPaymentTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05A_PortfolioValidateBillingReceiptTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_06_PortfolioLocationImportTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_03_ScorecardUploadTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_04_DocumentUploadTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_05_ReviewTest"></class> 
+	    <class name="com.Well.testcases.Portfolio.Portfolio_CTC_06_ScorecardUploadForAddedLocationTest"></class> 
+		 <class name="com.Well.testcases.Portfolio.Portfolio_CTC_07_DocumentUploadForAddedLocationTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_ErrorNegativeAssertTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_FieldNegativeAssertTest"></class> 
+		</classes> 
+	</test> 
+
+	  <test name="WELL-At-Scale-V2-Pilot-CustomUpload">
+		<parameter name="SheetName" value="Custom_Portfolio" />
+		<parameter name="rowNum" value="4" />
+		<parameter name="Country" value="US"/>
+		<parameter name="API" value="true"/>
+		<parameter name="ProjectType" value="v2-pilot"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="true"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="CustomUploadV2Pilot"/>
+		<parameter name="ProjectName" value="AutomationV2PilotCustomUploadPortfolio"/>
+		
+		<!--WELL-At-Scale-V2-Upload document all type document Before Review and Post Review
+		WELL-At-Scale-V2-Upload document all type in Subscribe location Viceversa validation with Portfolio-->
+		 <classes>
+		 <class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_03_SearchPortfolioByIdTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_04_SignAndSubscribePortfolioTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05_PortfolioPaymentTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05A_PortfolioValidateBillingReceiptTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_06_PortfolioLocationImportTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_03_ScorecardUploadTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_04_DocumentUploadTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_05_ReviewTest"></class> 
+		 <class name="com.Well.testcases.Portfolio.Portfolio_CTC_06_ScorecardUploadForAddedLocationTest"></class> 
+		 <class name="com.Well.testcases.Portfolio.Portfolio_CTC_07_DocumentUploadForAddedLocationTest"></class>  
+	<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_ErrorNegativeAssertTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_FieldNegativeAssertTest"></class>
+		</classes>  
+       </test> 
+       
+       <test name="WELL-At-Scale-ProductScorecard">
+		<parameter name="SheetName" value="Custom_Portfolio" />
+		<parameter name="rowNum" value="5" />
+		<parameter name="Country" value="US"/>
+		<parameter name="API" value="true"/>
+		<parameter name="ProjectType" value="v2"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="true"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="ProductScorecard"/>
+		<parameter name="ProjectName" value="AutomationCustomProductScorecardPortfolio"/>
+			<!--WELL-At-Scale AssignedTask validation
+		WELL-At-Scale Scorecard/Document library filters validation-->
+		<classes>
+		  <class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_03_SearchPortfolioByIdTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_04_SignAndSubscribePortfolioTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05_PortfolioPaymentTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05A_PortfolioValidateBillingReceiptTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_06_PortfolioLocationImportTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_08_ScorecardTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_10_AssignedTaskInLocationAccountTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_11_ReplaceDocumentUploadTest"></class> 
+		 <class name="com.Well.testcases.Portfolio.Portfolio_CTC_09_ScorecardFilterAndDocumentFilterTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_ErrorNegativeAssertTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch2_FieldNegativeAssertTest"></class>
+		</classes> 
+	</test>  
+</suite>  

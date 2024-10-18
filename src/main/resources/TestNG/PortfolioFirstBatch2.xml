@@ -1,0 +1,38 @@
+<suite name="Portfolio-FirstBatch-Module">
+
+	
+<parameter name="browserName" value="chrome"/>
+<parameter name="environment" value="Test"/>
+<parameter name="moduleName" value="Common"/>   
+<parameter name="videoRecording" value="true"/>
+
+ <test name="WELL-At-Scale-EnrollementListFilter">
+		<parameter name="SheetName" value="Portfolio" />
+		<parameter name="rowNum" value="5" />
+		<parameter name="Country" value="CN"/>
+		<parameter name="ProjectType" value="v2"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="false"/>
+		<parameter name="API" value="false"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="Common"/>
+		<parameter name="ProjectName" value="AutomationV2PortfolioEnrollmentFilter"/>
+		
+		<classes>
+		<class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_03_SearchPortfolioByNSStatusTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_03A_AfterRegisteredDashboardTest"></class>
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_04_SignAndSubscribePortfolioTest"></class> 
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_04A_AfterEnrollDashboardTest"></class>
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_05_SearchPortfolioByInProgressStatusTest"></class> 
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_06_PortfolioPaymentTest"></class> 
+	   <class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_06A_AfterBillingDashboardTest"></class>
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_07_ResourceTest"></class>
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_SF_07A_SearchPortfolioBySubscribedStatusTest"></class>  
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch1_ErrorNegativeAssertTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_Batch1_FieldNegativeAssertTest"></class>
+		</classes> 
+	</test> 
+	 
+</suite>  

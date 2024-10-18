@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="WELL-Community-Module">
+
+<parameter name="browserName" value="chrome"/>
+<parameter name="environment" value="Test"/>
+<parameter name="moduleName" value="Common"/>
+<parameter name="videoRecording" value="true"/>
+
+<test name="WELL-Community" >
+<parameter name="SheetName" value="Community"/>
+<parameter name="rowNum" value="2"/>
+<parameter name="Country" value="US"/>
+ 
+<classes>
+  <!-- <class name="com.Well.testcases.Faculty.Faculty_TC_05_BulkDeleteInitialTest"></class>  -->
+<class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+ <!--  <class name="com.Well.testcases.Community.Community_TC_02_RegisterTest"></class>
+<class name="com.Well.testcases.Community.Community_TC_03_SearchListByIdTest"></class>
+<class name="com.Well.testcases.Community.Community_TC_04_BillingTest"></class>
+ <class name="com.Well.testcases.Community.Community_TC_05_EditTest"></class>
+ <class name="com.Well.testcases.Community.Community_TC_06_AgreementTest"></class>
+ <class name="com.Well.testcases.Community.Community_TC_07_ReviewTest"></class> 
+ <class name="com.Well.testcases.Community.Community_TC_08_ProfileTest"></class> 
+<class name="com.Well.testcases.Community.Community_TC_09_AddTeamMemberTest"></class> 
+<class name="com.Well.testcases.Community.Community_TC_10_AlternativesTest"></class>   
+<class name="com.Well.testcases.Community.Community_TC_11_ErrorNegativeAssertTest"></class>
+<class name="com.Well.testcases.Community.Community_TC_12_NegativeFieldAssertTest"></class>   -->
+</classes> 
+</test>
+
+<test name="WELL-Community1" >
+<parameter name="SheetName" value="Community"/>
+<parameter name="rowNum" value="2"/>
+<parameter name="Country" value="US"/>
+ 
+<classes>
+  <!-- <class name="com.Well.testcases.Faculty.Faculty_TC_05_BulkDeleteInitialTest"></class>  -->
+<class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+ <!--  <class name="com.Well.testcases.Community.Community_TC_02_RegisterTest"></class>
+<class name="com.Well.testcases.Community.Community_TC_03_SearchListByIdTest"></class>
+<class name="com.Well.testcases.Community.Community_TC_04_BillingTest"></class>
+ <class name="com.Well.testcases.Community.Community_TC_05_EditTest"></class>
+ <class name="com.Well.testcases.Community.Community_TC_06_AgreementTest"></class>
+ <class name="com.Well.testcases.Community.Community_TC_07_ReviewTest"></class> 
+ <class name="com.Well.testcases.Community.Community_TC_08_ProfileTest"></class> 
+<class name="com.Well.testcases.Community.Community_TC_09_AddTeamMemberTest"></class> 
+<class name="com.Well.testcases.Community.Community_TC_10_AlternativesTest"></class>   
+<class name="com.Well.testcases.Community.Community_TC_11_ErrorNegativeAssertTest"></class>
+<class name="com.Well.testcases.Community.Community_TC_12_NegativeFieldAssertTest"></class>   -->
+</classes> 
+</test>
+</suite>  

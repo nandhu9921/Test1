@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="V2Project-Module">
+
+
+ <parameter name="moduleName" value="V2"/>   
+
+<test name="WELL-V2-CoreProject-Single Assert-Opt-Rating-Renewal" >
+<parameter name="SheetName" value="V2Project"/>
+<parameter name="rowNum" value="11"/>
+<parameter name="Type" value="WELLCore"/>
+<parameter name="Country" value="US"/>
+<parameter name="Discount" value="SectorDiscount"/>
+<parameter name="is_Leed" value="false"/>
+<parameter name="ProjectType" value="v2"/>
+<parameter name="API" value="true"/>
+<parameter name="Upload" value="false"/>
+<parameter name="Commodity" value="SingleAsset"/>
+<parameter name="ImportLocation" value="No"/>
+<parameter name="ProjectName" value="AutomationV2ProjectHsrOptRatingRenewal"/>
+
+<!--WELL-Certification Renewal document upload-->
+<classes>
+<class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_02_RegisterV2ProjectTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_03_SearchV2ProjectByIdTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_04_EnrollV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_21_PricingV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_05_BillingV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_06_AgreementV2ProjectTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_30_ScorecardPurseV2ProjectTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_14C_VerifyScorecardV2ProjectTest"></class>
+<class name="com.Well.testcases.V2Project.V2_TC_27_HealthSafetyV2ProjectHsrOptn_RenewalTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_Batch2_ErrorNegativeAssertTest"></class> 
+<class name="com.Well.testcases.V2Project.V2_TC_Batch2_FieldNegativeAssertTest"></class>
+</classes>
+</test>  
+</suite> 
